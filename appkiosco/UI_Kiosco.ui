@@ -1,0 +1,1820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="window_layout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="window">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(15, 12, 41, 255), stop:1 rgba(48, 43, 99, 255));
+border-radius:10px;</string>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="title_bar">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: none;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_title">
+            <property name="font">
+             <font>
+              <family>JasmineUPC</family>
+              <pointsize>17</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>15</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_title">
+               <property name="font">
+                <font>
+                 <family>Levenim MT</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 212, 212)</string>
+               </property>
+               <property name="text">
+                <string>Kiosco</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_btns">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QPushButton" name="btn_close">
+             <property name="geometry">
+              <rect>
+               <x>70</x>
+               <y>10</y>
+               <width>16</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>17</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>Close</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	border: none;
+	border-radius: 8px;
+	background-color: rgb(255, 0, 0);
+}
+QPushButton:hover {
+	background-color: rgba(255, 0, 0, 150);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="btn_minimize">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>10</y>
+               <width>16</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>17</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>Minimize</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	border: none;
+	border-radius: 8px;
+	background-color: rgb(85, 255, 127);
+}
+QPushButton:hover {
+	background-color: rgba(58, 255, 127, 150);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="content_bar">
+         <property name="styleSheet">
+          <string notr="true">background-color: none;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>15</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>15</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_menus">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QPushButton" name="btn_ventas">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>60</y>
+               <width>111</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Latha</family>
+               <pointsize>15</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 255), stop:1 rgba(0, 170, 255, 255));
+	color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 150), stop:1 rgba(0, 170, 255, 150));
+	color: rgb(255, 255, 255);
+}</string>
+             </property>
+             <property name="text">
+              <string>Ventas</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="btn_cuentas">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>120</y>
+               <width>111</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Latha</family>
+               <pointsize>15</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 255), stop:1 rgba(0, 170, 255, 255));
+	color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 150), stop:1 rgba(0, 170, 255, 150));
+	color: rgb(255, 255, 255);
+}</string>
+             </property>
+             <property name="text">
+              <string>Cuentas</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="btn_historial">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>180</y>
+               <width>111</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Latha</family>
+               <pointsize>15</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 255), stop:1 rgba(0, 170, 255, 255));
+	color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 150), stop:1 rgba(0, 170, 255, 150));
+	color: rgb(255, 255, 255);
+}</string>
+             </property>
+             <property name="text">
+              <string>Historial</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="btn_configuracion">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>450</y>
+               <width>111</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Latha</family>
+               <pointsize>15</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 255), stop:1 rgba(0, 170, 255, 255));
+	color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 150), stop:1 rgba(0, 170, 255, 150));
+	color: rgb(255, 255, 255);
+}</string>
+             </property>
+             <property name="text">
+              <string>Config</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_pages">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QStackedWidget" name="pages_widget">
+               <property name="font">
+                <font>
+                 <family>Latha</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: none;</string>
+               </property>
+               <property name="currentIndex">
+                <number>3</number>
+               </property>
+               <widget class="QWidget" name="page_ventas">
+                <widget class="QTableWidget" name="listaVentas">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>70</y>
+                   <width>231</width>
+                   <height>501</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::StrongFocus</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QTableWidget {	
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+	border-radius: 5px;
+	gridline-color: rgb(44, 49, 60);
+	border-bottom: 1px solid rgb(44, 49, 60);
+}
+QTableWidget::item{
+	border-color: rgb(44, 49, 60);
+	padding-left: 5px;
+	padding-right: 5px;
+	gridline-color: rgb(44, 49, 60);
+}
+QTableWidget::item:selected{
+	background-color: rgb(27, 55, 83);
+}
+QScrollBar:horizontal {
+    border: none;
+    background: rgb(52, 59, 72);
+    height: 14px;
+    margin: 0px 21px 0 21px;
+	border-radius: 0px;
+}
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(52, 59, 72);
+    width: 14px;
+    margin: 21px 0 21px 0;
+	border-radius: 0px;
+ }
+QHeaderView::section{
+	Background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+	max-width: 30px;
+	border: 1px solid rgb(44, 49, 60);
+	border-style: none;
+    border-bottom: 1px solid rgb(44, 49, 60);
+    border-right: 1px solid rgb(44, 49, 60);
+}
+QTableWidget::horizontalHeader {	
+	background-color:  qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+}
+QHeaderView::section:horizontal
+{
+    border: 1px solid rgb(32, 34, 42);
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+	padding: 3px;
+}
+QHeaderView::section:vertical
+{
+    border: 1px solid rgb(44, 49, 60);
+}</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::VLine</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Sunken</enum>
+                 </property>
+                 <property name="lineWidth">
+                  <number>2</number>
+                 </property>
+                 <property name="sizeAdjustPolicy">
+                  <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                 </property>
+                 <property name="editTriggers">
+                  <set>QAbstractItemView::NoEditTriggers</set>
+                 </property>
+                 <property name="selectionBehavior">
+                  <enum>QAbstractItemView::SelectRows</enum>
+                 </property>
+                 <attribute name="horizontalHeaderDefaultSectionSize">
+                  <number>77</number>
+                 </attribute>
+                 <attribute name="horizontalHeaderHighlightSections">
+                  <bool>false</bool>
+                 </attribute>
+                 <attribute name="verticalHeaderVisible">
+                  <bool>false</bool>
+                 </attribute>
+                 <attribute name="verticalHeaderHighlightSections">
+                  <bool>false</bool>
+                 </attribute>
+                </widget>
+                <widget class="QLabel" name="label_ventas">
+                 <property name="geometry">
+                  <rect>
+                   <x>40</x>
+                   <y>30</y>
+                   <width>181</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Ventas:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_ingreso">
+                 <property name="geometry">
+                  <rect>
+                   <x>310</x>
+                   <y>30</y>
+                   <width>171</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Nuevo ingreso:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_adicional">
+                 <property name="geometry">
+                  <rect>
+                   <x>310</x>
+                   <y>140</y>
+                   <width>231</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Información adicional:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btn_agregar">
+                 <property name="geometry">
+                  <rect>
+                   <x>310</x>
+                   <y>260</y>
+                   <width>121</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Latha</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 255), stop:1 rgba(0, 170, 255, 255));
+	color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 150), stop:1 rgba(0, 170, 255, 150));
+	color: rgb(255, 255, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Agregar</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btn_borrar">
+                 <property name="geometry">
+                  <rect>
+                   <x>310</x>
+                   <y>340</y>
+                   <width>121</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Latha</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 255), stop:1 rgba(0, 170, 255, 255));
+	color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 150), stop:1 rgba(0, 170, 255, 150));
+	color: rgb(255, 255, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Borrar</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_dia">
+                 <property name="geometry">
+                  <rect>
+                   <x>300</x>
+                   <y>520</y>
+                   <width>271</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Total del dïa:</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="ingreso_entry">
+                 <property name="geometry">
+                  <rect>
+                   <x>300</x>
+                   <y>70</y>
+                   <width>261</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, 						x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 			255, 255));
+}
+
+QLineEdit:hover {
+	background-color: qlineargradient(spread:pad, x1:0.528, y1:1, x2:0.522, y2:0.596227, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+}</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="adicional_entry">
+                 <property name="geometry">
+                  <rect>
+                   <x>300</x>
+                   <y>180</y>
+                   <width>261</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, 						x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 			255, 255));
+}
+
+QLineEdit:hover {
+	background-color: qlineargradient(spread:pad, x1:0.528, y1:1, x2:0.522, y2:0.596227, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+}</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="label_status">
+                 <property name="geometry">
+                  <rect>
+                   <x>310</x>
+                   <y>430</y>
+                   <width>261</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>ArrowCursor</cursorShape>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
+                 </property>
+                 <property name="acceptDrops">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgba(0,0,0,0);
+color: rgb(0, 170, 255);</string>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="page_config">
+                <widget class="QLabel" name="label_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>50</x>
+                   <y>30</y>
+                   <width>91</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>E-Mail:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>40</x>
+                   <y>100</y>
+                   <width>601</width>
+                   <height>151</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Latha</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>La aplicación Kiosco, generara un respaldo de modo online de la base de datos en cada inicio. Dicho respaldo se enviara al e-mail registrado.</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="email">
+                 <property name="geometry">
+                  <rect>
+                   <x>140</x>
+                   <y>30</y>
+                   <width>291</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, 						x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 			255, 255));
+}
+
+QLineEdit:hover {
+	background-color: qlineargradient(spread:pad, x1:0.528, y1:1, x2:0.522, y2:0.596227, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+}</string>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="page_historial">
+                <widget class="QTableWidget" name="historial_ventas">
+                 <property name="geometry">
+                  <rect>
+                   <x>400</x>
+                   <y>70</y>
+                   <width>231</width>
+                   <height>211</height>
+                  </rect>
+                 </property>
+                 <property name="cursor" stdset="0">
+                  <cursorShape>ArrowCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QTableWidget {	
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+	border-radius: 5px;
+	gridline-color: rgb(44, 49, 60);
+	border-bottom: 1px solid rgb(44, 49, 60);
+}
+QTableWidget::item{
+	border-color: rgb(44, 49, 60);
+	padding-left: 5px;
+	padding-right: 5px;
+	gridline-color: rgb(44, 49, 60);
+}
+QTableWidget::item:selected{
+	background-color: rgb(27, 55, 83);
+}
+QScrollBar:horizontal {
+    border: none;
+    background: rgb(52, 59, 72);
+    height: 14px;
+    margin: 0px 21px 0 21px;
+	border-radius: 0px;
+}
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(52, 59, 72);
+    width: 14px;
+    margin: 21px 0 21px 0;
+	border-radius: 0px;
+ }
+QHeaderView::section{
+	Background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+	max-width: 30px;
+	border: 1px solid rgb(44, 49, 60);
+	border-style: none;
+    border-bottom: 1px solid rgb(44, 49, 60);
+    border-right: 1px solid rgb(44, 49, 60);
+}
+QTableWidget::horizontalHeader {	
+	background-color:  qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+}
+QHeaderView::section:horizontal
+{
+    border: 1px solid rgb(32, 34, 42);
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+	padding: 3px;
+}
+QHeaderView::section:vertical
+{
+    border: 1px solid rgb(44, 49, 60);
+}</string>
+                 </property>
+                </widget>
+                <widget class="QCalendarWidget" name="calendarWidget">
+                 <property name="geometry">
+                  <rect>
+                   <x>70</x>
+                   <y>80</y>
+                   <width>256</width>
+                   <height>183</height>
+                  </rect>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label">
+                 <property name="geometry">
+                  <rect>
+                   <x>410</x>
+                   <y>30</y>
+                   <width>151</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>ventas:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>410</x>
+                   <y>290</y>
+                   <width>151</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Fiado:</string>
+                 </property>
+                </widget>
+                <widget class="QTableWidget" name="historial_fiado">
+                 <property name="geometry">
+                  <rect>
+                   <x>400</x>
+                   <y>330</y>
+                   <width>231</width>
+                   <height>151</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QTableWidget {	
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+	border-radius: 5px;
+	gridline-color: rgb(44, 49, 60);
+	border-bottom: 1px solid rgb(44, 49, 60);
+}
+QTableWidget::item{
+	border-color: rgb(44, 49, 60);
+	padding-left: 5px;
+	padding-right: 5px;
+	gridline-color: rgb(44, 49, 60);
+}
+QTableWidget::item:selected{
+	background-color: rgb(27, 55, 83);
+}
+QScrollBar:horizontal {
+    border: none;
+    background: rgb(52, 59, 72);
+    height: 14px;
+    margin: 0px 21px 0 21px;
+	border-radius: 0px;
+}
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(52, 59, 72);
+    width: 14px;
+    margin: 21px 0 21px 0;
+	border-radius: 0px;
+ }
+QHeaderView::section{
+	Background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+	max-width: 30px;
+	border: 1px solid rgb(44, 49, 60);
+	border-style: none;
+    border-bottom: 1px solid rgb(44, 49, 60);
+    border-right: 1px solid rgb(44, 49, 60);
+}
+QTableWidget::horizontalHeader {	
+	background-color:  qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+}
+QHeaderView::section:horizontal
+{
+    border: 1px solid rgb(32, 34, 42);
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+	padding: 3px;
+}
+QHeaderView::section:vertical
+{
+    border: 1px solid rgb(44, 49, 60);
+}</string>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QWidget" name="page_cuentas">
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <widget class="QTableWidget" name="listaCuentas">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>130</y>
+                   <width>231</width>
+                   <height>191</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QTableWidget {	
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+	border-radius: 5px;
+	gridline-color: rgb(44, 49, 60);
+	border-bottom: 1px solid rgb(44, 49, 60);
+}
+QTableWidget::item{
+	border-color: rgb(44, 49, 60);
+	padding-left: 5px;
+	padding-right: 5px;
+	gridline-color: rgb(44, 49, 60);
+}
+QTableWidget::item:selected{
+	background-color: rgb(27, 55, 83);
+}
+QScrollBar:horizontal {
+    border: none;
+    background: rgb(52, 59, 72);
+    height: 14px;
+    margin: 0px 21px 0 21px;
+	border-radius: 0px;
+}
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(52, 59, 72);
+    width: 14px;
+    margin: 21px 0 21px 0;
+	border-radius: 0px;
+ }
+QHeaderView::section{
+	Background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+	max-width: 30px;
+	border: 1px solid rgb(44, 49, 60);
+	border-style: none;
+    border-bottom: 1px solid rgb(44, 49, 60);
+    border-right: 1px solid rgb(44, 49, 60);
+}
+QTableWidget::horizontalHeader {	
+	background-color:  qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+}
+QHeaderView::section:horizontal
+{
+    border: 1px solid rgb(32, 34, 42);
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+	padding: 3px;
+}
+QHeaderView::section:vertical
+{
+    border: 1px solid rgb(44, 49, 60);
+}</string>
+                 </property>
+                 <property name="sizeAdjustPolicy">
+                  <enum>QAbstractScrollArea::AdjustToContents</enum>
+                 </property>
+                 <property name="editTriggers">
+                  <set>QAbstractItemView::NoEditTriggers</set>
+                 </property>
+                 <property name="dragDropOverwriteMode">
+                  <bool>false</bool>
+                 </property>
+                 <property name="selectionBehavior">
+                  <enum>QAbstractItemView::SelectRows</enum>
+                 </property>
+                 <attribute name="horizontalHeaderDefaultSectionSize">
+                  <number>115</number>
+                 </attribute>
+                 <attribute name="horizontalHeaderMinimumSectionSize">
+                  <number>31</number>
+                 </attribute>
+                 <attribute name="horizontalHeaderStretchLastSection">
+                  <bool>true</bool>
+                 </attribute>
+                 <attribute name="verticalHeaderVisible">
+                  <bool>false</bool>
+                 </attribute>
+                 <attribute name="verticalHeaderDefaultSectionSize">
+                  <number>35</number>
+                 </attribute>
+                 <attribute name="verticalHeaderHighlightSections">
+                  <bool>false</bool>
+                 </attribute>
+                </widget>
+                <widget class="QTableWidget" name="listaDeudas">
+                 <property name="geometry">
+                  <rect>
+                   <x>340</x>
+                   <y>130</y>
+                   <width>431</width>
+                   <height>191</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QTableWidget {	
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+	border-radius: 5px;
+	gridline-color: rgb(44, 49, 60);
+	border-bottom: 1px solid rgb(44, 49, 60);
+}
+QTableWidget::item{
+	border-color: rgb(44, 49, 60);
+	padding-left: 5px;
+	padding-right: 5px;
+	gridline-color: rgb(44, 49, 60);
+}
+QTableWidget::item:selected{
+	background-color: rgb(27, 55, 83);
+}
+QScrollBar:horizontal {
+    border: none;
+    background: rgb(52, 59, 72);
+    height: 14px;
+    margin: 0px 21px 0 21px;
+	border-radius: 0px;
+}
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(52, 59, 72);
+    width: 14px;
+    margin: 21px 0 21px 0;
+	border-radius: 0px;
+ }
+QHeaderView::section{
+	Background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+	max-width: 30px;
+	border: 1px solid rgb(44, 49, 60);
+	border-style: none;
+    border-bottom: 1px solid rgb(44, 49, 60);
+    border-right: 1px solid rgb(44, 49, 60);
+}
+QTableWidget::horizontalHeader {	
+	background-color:  qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+}
+QHeaderView::section:horizontal
+{
+    border: 1px solid rgb(32, 34, 42);
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+	padding: 3px;
+}
+QHeaderView::section:vertical
+{
+    border: 1px solid rgb(44, 49, 60);
+}</string>
+                 </property>
+                 <property name="selectionBehavior">
+                  <enum>QAbstractItemView::SelectRows</enum>
+                 </property>
+                 <attribute name="horizontalHeaderStretchLastSection">
+                  <bool>true</bool>
+                 </attribute>
+                 <attribute name="verticalHeaderVisible">
+                  <bool>false</bool>
+                 </attribute>
+                 <attribute name="verticalHeaderHighlightSections">
+                  <bool>false</bool>
+                 </attribute>
+                </widget>
+                <widget class="QLabel" name="label_nuevacuenta">
+                 <property name="geometry">
+                  <rect>
+                   <x>40</x>
+                   <y>400</y>
+                   <width>151</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Nueva cuenta:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_borrarcuenta">
+                 <property name="geometry">
+                  <rect>
+                   <x>40</x>
+                   <y>30</y>
+                   <width>161</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Buscar cuenta:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btn_buscarcuenta">
+                 <property name="geometry">
+                  <rect>
+                   <x>220</x>
+                   <y>70</y>
+                   <width>41</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Latha</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 255), stop:1 rgba(0, 170, 255, 255));
+	color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 150), stop:1 rgba(0, 170, 255, 150));
+	color: rgb(255, 255, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Ok</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_agregardeuda">
+                 <property name="geometry">
+                  <rect>
+                   <x>350</x>
+                   <y>30</y>
+                   <width>161</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Agregar deuda:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btn_agregardeuda">
+                 <property name="geometry">
+                  <rect>
+                   <x>730</x>
+                   <y>70</y>
+                   <width>41</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Latha</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 255), stop:1 rgba(0, 170, 255, 255));
+	color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 150), stop:1 rgba(0, 170, 255, 150));
+	color: rgb(255, 255, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Ok</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_pago">
+                 <property name="geometry">
+                  <rect>
+                   <x>350</x>
+                   <y>400</y>
+                   <width>141</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Pago:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btn_nuevacuenta">
+                 <property name="geometry">
+                  <rect>
+                   <x>220</x>
+                   <y>440</y>
+                   <width>41</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Latha</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 255), stop:1 rgba(0, 170, 255, 255));
+	color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 150), stop:1 rgba(0, 170, 255, 150));
+	color: rgb(255, 255, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Ok</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btn_pagodeuda">
+                 <property name="geometry">
+                  <rect>
+                   <x>600</x>
+                   <y>440</y>
+                   <width>41</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Latha</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 255), stop:1 rgba(0, 170, 255, 255));
+	color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 150), stop:1 rgba(0, 170, 255, 150));
+	color: rgb(255, 255, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Ok</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btn_borrarcuenta">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>520</y>
+                   <width>231</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Latha</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 255), stop:1 rgba(0, 170, 255, 255));
+	color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 150), stop:1 rgba(0, 170, 255, 150));
+	color: rgb(255, 255, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Borrar cuenta</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="btn_pagocompleto">
+                 <property name="geometry">
+                  <rect>
+                   <x>340</x>
+                   <y>520</y>
+                   <width>301</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Latha</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 255), stop:1 rgba(0, 170, 255, 255));
+	color: rgb(0, 0, 0);
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0.517, y1:1, x2:0.511, 				y2:0, stop:0 rgba(0, 69, 104, 150), stop:1 rgba(0, 170, 255, 150));
+	color: rgb(255, 255, 255);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Pago completo</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="buscarcuenta_entry">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>70</y>
+                   <width>171</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, 						x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 			255, 255));
+}
+
+QLineEdit:hover {
+	background-color: qlineargradient(spread:pad, x1:0.528, y1:1, x2:0.522, y2:0.596227, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+}</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="montodeuda_entry">
+                 <property name="geometry">
+                  <rect>
+                   <x>340</x>
+                   <y>70</y>
+                   <width>171</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, 						x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 			255, 255));
+}
+
+QLineEdit:hover {
+	background-color: qlineargradient(spread:pad, x1:0.528, y1:1, x2:0.522, y2:0.596227, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+}</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="pagodeuda_entry">
+                 <property name="geometry">
+                  <rect>
+                   <x>340</x>
+                   <y>440</y>
+                   <width>241</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, 						x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 			255, 255));
+}
+
+QLineEdit:hover {
+	background-color: qlineargradient(spread:pad, x1:0.528, y1:1, x2:0.522, y2:0.596227, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+}</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="nuevacuenta_entry">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>440</y>
+                   <width>171</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, 						x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 			255, 255));
+}
+
+QLineEdit:hover {
+	background-color: qlineargradient(spread:pad, x1:0.528, y1:1, x2:0.522, y2:0.596227, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+}</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="status_Cuenta">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>340</y>
+                   <width>301</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Leelawadee</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="productodeuda_entry">
+                 <property name="geometry">
+                  <rect>
+                   <x>540</x>
+                   <y>70</y>
+                   <width>171</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+	background-color: qlineargradient(spread:pad, x1:0.522682, y1:1, 						x2:0.516682, y2:0.011, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 			255, 255));
+}
+
+QLineEdit:hover {
+	background-color: qlineargradient(spread:pad, x1:0.528, y1:1, x2:0.522, y2:0.596227, stop:0 rgba(0, 111, 166, 255), stop:1 rgba(0, 170, 255, 255));
+}</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="total_deuda">
+                 <property name="geometry">
+                  <rect>
+                   <x>340</x>
+                   <y>340</y>
+                   <width>331</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Levenim MT</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 170, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="credits_bar">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: none;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_label_credits">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>15</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_credits">
+               <property name="font">
+                <font>
+                 <family>Levenim MT</family>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(128, 102, 168);</string>
+               </property>
+               <property name="text">
+                <string>App desarrollada por Nahuel Calcara. ©</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_grip">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">padding: 5px;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
